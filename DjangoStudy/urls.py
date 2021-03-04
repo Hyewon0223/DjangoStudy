@@ -16,11 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
+
 urlpatterns = [
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
 ]
-
 # include() : 다른 URLconf들을 참조할 수 있도록 도와줌
 # -> Django가 include()를 만나게되면, URL의 그 시점까지 일치하는 부분을 잘라내고,
 #    남은 문자열 부분을 후속 처리를 위해 include된 URLconf로 전달한다.
