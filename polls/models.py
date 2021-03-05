@@ -1,15 +1,30 @@
+import datetime
 from django.db import models
+from django.utils import timezone
 
 
 class Question(models.Model):
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published')
 
+    def __str__(self):
+        return self.question_text
+    # __str__() 대화 형 프롬프트를 처리할 때 자신의 편의를 위해서 뿐만 아니라
+    # Django의 자동 생성 관리자 전체에서 개체의 표현이 사용되기 때문에
+    # 모델에 메소드를 추가하는 것이 중요함
+
+    def was_published_recently(self):
+        return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
+
 
 class Choice(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
     choice_text = models.CharField(max_length=200)
     votes = models.IntegerField(default=0)
+
+    def __str__(self):
+        return self.choice_text
+
 
 # 데이터베이스의 각 필드는 Field 클래스의 인스턴스로서 표현됨
 #  CharField : 문자(character)필드를 표현
