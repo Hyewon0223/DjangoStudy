@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% if latest_question_list %}
+    <ul>
+        {% for question in latest_question_list %}
+        <!--
+        하드코딩된 URL
+            -> 문제점 : 수많은 템플릿을 가진 프로젝트들의 URL을 바꾸는게 어려운 일이 됨됨
+            -> polls.urls 모듈의 path() 함수에서 인수의 이름을 정의했으므로,
+               {% url %} template 태그를 사용하여
+               url 설정에 정의된 특정한 URL 경로들의 의존성을 제거할 수 있음
+        -->
+        <li><a href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li>
+        <!-- polls.urls 모듈에 서술된 URL 의 정의를 탐색하는 식으로 동작-->
+<!--        <li><a href="{% url 'detail' question.id %}">{{ question.question_text }}</a></li>-->
+<!--        {% endfor %}-->
+    </ul>
+    {% else %}
+    <p>No polls are available.</p>
+    {% endif %}
+</body>
+</html>

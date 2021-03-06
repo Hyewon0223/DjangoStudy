@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>{{ question.question_text }}</h1>
+
+    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+    <form action="{% url 'polls:vote' question.id %}" method="post">
+        {% csrf_token %}
+        {% for choice in question.choice_set.all %}
+        <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
+        <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
+        {% endfor %}
+        <input type="submit" value="Vote">
+    </form>
+        </ul>
+</body>
+</html>
+
+
+<!--
+템플릿 시스템은 변수의 속성에 접근하기 위해 점-탐색(dot-lookup) 문법을 사용함
+    -> 예제의 {{ question.question_text }} 구문을 보면,
+       Django는 먼저 question 객체에 대해 사전형으로 탐색
+    -> 탐색에 실패하게 되면 속성값으로 탐색
+    -> 만약 속성 탐색에도 실패한다면 리스트의 인덱스 탐색을 시도하게 됨.
+-->
+
+<!--
+{% for %} 반복 구문에서 메소드 호출이 일어남
+question.choice_set.all은 Python에서 question.choice_set.all() 코드로 해석되며,
+이때 반환된 Choice 객체의 반복자는 {% for %}에서 사용하기 적당함
+-->
