@@ -134,7 +134,7 @@ button:hover{
     position : relative;
 }
 
-.lectures .title:before, .lectures, .title:after{
+.lectures .title:before, .lectures .title:after{
     content: '';
     display : block;
     width : 120px;
