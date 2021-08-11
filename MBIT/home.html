@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 개발 유형찾기</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+</head>
+<body>
+    <section id="survey">
+        <div class="wrapper">
+            <form id="form">
+                <div class="test">
+                    <div class="question_container">
+                        <h3 class="number">1/3</h3>
+                        <h3 class="question">당신이 가장 재밌었던 수업은?</h3>
+                    </div>
+                    <div class="answer">
+                        <div>
+                           <input type="radio" name="answer_1" />
+                           <label>게임 개발(유니티, 언리얼, Pygame)</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="answer_1" />
+                            <label>백엔드 또는 인프라(C계열-닷넷, JAVA-Spring, Python-Django, Network, Ubuntu, CentOS, 부하분산, etc)</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="answer_1" />
+                            <label>정보보안(해킹과 방어)</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="answer_1" />
+                            <label>프론트엔드(HTML, CSS, Javascript, etc)</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="answer_1" />
+                            <label>데이터 분석과 인공지능(전처리, 분석, 시각화, 머신러닝, 딥러닝)</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="answer_1" />
+                            <label>이 길은 내 길이 아닌 것 같다... 고로 재미있는지 모르겠다. </label>
+                        </div>
+                    </div>
+                    <div class="btn_wrap">
+                        <button class="next_btn">다음</button>
+                    </div>
+                </div>
+
+                <div class="test">
+                    <div class="question_container">
+                        <div class="number">2/3</div>
+                        <div class="question">여러분의 서비스가 성공하였다면, 서비스를 성공시킨 요소는?</div>
+                    </div>
+                    <div class="answer">
+                        <div>
+                            <input type="radio" name="answer_2" />
+                            <label>데이터 분석을 통한 효과적인 개인 맞춤형 서비스</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="answer_2" />
+                            <label>화려하거나 품격있는 디자인, 흥미로운 콘텐츠 제작</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="answer_2" />
+                            <label>게임적인(Gamification, 게이미피케이션) 요소 도입</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="answer_2" />
+                            <label>안정적인 서비스 운용</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="answer_2" />
+                            <label>믿을 수 있는 정보 관리</label>
+                        </div>
+                    </div>
+                    <div class="btn_wrap btn_sort">
+                        <button class="prev_btn">이 전</button>
+                        <button class="next_btn">다 음</button>
+                    </div>
+                </div>  
+
+                <div class="test">
+                    <div class="question_container">
+                        <div class="number">3/3</div>
+                        <div class="question">당신은 친구의 집들이에 가려고 합니다. 당신이 선택한 선물은?</div>
+                    </div>
+                    <div class="answer">
+                        <div>
+                            <input type="radio" name="answer_3" />
+                            <label>집 꾸미기에 도움이 되는 예쁜 인테리어 소품을 골라볼까?</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="answer_3" />
+                            <label>실용성이 갑이지! 화장지랑 수건 세트랑...</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="answer_3" />
+                            <label>음... 우선 센스있는 집들이 선물 먼저 검색해봐야지!</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="answer_3" />
+                            <label>집들이 가서 뭐하겠어! 보드 게임이나 사 가자!</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="answer_3" />
+                            <label>역시 집은 안전이 최고!! 현관문 보안장치 사줘야겠다.</label>
+                        </div>
+                    </div>
+                    <div class="btn_wrap btn_sort">
+                        <button class="prev_btn">이 전</button>
+                        <input type="submit" value="제 출" class="submit_btn"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
+</body>
+</html>
