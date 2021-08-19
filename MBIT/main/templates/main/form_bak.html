@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+</head>
+<body>
+  <form action="/result/" method="post">
+    {% csrf_token %}
+    {% for question in questions %}
+      <h3>{{ question.number }}번 {{ question.content }}</h3>
+      {% for choice in question.choice_set.all %}
+        <div>
+          <input type="radio" name="question-{{ question.number }}" id="choice-{{ choice.pk }}" value="{{ choice.developer.pk }}">
+          <label for="choice-{{ choice.pk }}">{{ forloop.counter }}. {{ choice.content }}</label>
+        </div>
+      {% endfor %}
+      <hr>
+    {% endfor %}
+    <input type="submit" value="제출하기">
+  </form>
+</body>
+</html>

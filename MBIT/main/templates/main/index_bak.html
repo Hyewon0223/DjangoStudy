@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+</head>
+<body>
+  <h1>index 페이지입니다</h1>
+  <a href="form/">설문 하기</a>
+  {% for developer in developers %}
+    <p>{{ developer.name }} : {{ developer.count }}명</p>
+  {% endfor %}
+</body>
+</html>

@@ -1,0 +1,59 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+{% endblock head %}
+
+{% block body %}
+    <section id="survey">
+        <div class="wrapper">
+            <form id="form" action="{% url 'main:submit' %}" method="post">
+                {% csrf_token %}
+                {% for question in questions %}
+                <div class="test">
+                    <div class="question_container">
+                        <h3 class="number">{{ question.number }}/{{ questions.count }}</h3>
+                        <h3 class="question">{{ question.content }}</h3>
+                    </div>
+                    <div class="answer">
+                        {% for choice in question.choice_set.all %}
+                        <div>
+                            <input 
+                                type="radio" 
+                                name="question-{{ question.pk }}" 
+                                id="choice-{{ choice.pk }}" 
+                                value="{{ choice.developer.pk }}"
+                            />
+                            <label for="choice-{{ choice.pk }}">
+                                {{ forloop.counter }}. {{choice.content}}
+                            </label>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% if not forloop.first %}
+                        <div class="btn_wrap btn_sort">
+                    {% else %}
+                        <div class="btn_wrap">
+                    {% endif %}
+                    {% if not forloop.first %}       
+                        <button class="prev_btn">이 전</button>
+                    {% endif %}
+                    {% if not forloop.last %}
+                        <button class="next_btn">다 음</button>
+                    {% else %}
+                        <input type="submit" value="제 출" class="submit_btn"/>
+                    {% endif %}
+                    </div>
+                </div>    
+            {% endfor %}
+            </form>
+        </div>
+    </section>
+{% endblock body %}
+        
+{% block js %}
+        <script type="text/javascript" src="{% static 'js/form.js' %}"></script>
+{% endblock js %}
