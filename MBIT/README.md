@@ -19,3 +19,21 @@
 
 ### `ResultPage`
 ![ResultPage](https://user-images.githubusercontent.com/54919662/129191862-fdd923ff-9223-4c12-b8cf-f88ca594aad1.png)
+
+---
+## 4주차 과제
+- [x] 관리자 페이지
+- [x] templates 작성하기
+- [x] django의 shell과 ORM
+- [x] Database Seeding
+- [x] static 파일
+- [x] 템플릭   
+
+### `MainPage`
+![1](https://user-images.githubusercontent.com/54919662/130082227-9ea4c170-c594-4c8c-aa0c-9afbfe5146c6.png)
+   
+### `SurveyPage`
+![2](https://user-images.githubusercontent.com/54919662/130082235-1393d811-c58f-4ddb-995a-9e915c05a2ac.png)
+
+### `ResultPage`
+![3](https://user-images.githubusercontent.com/54919662/130082238-126f8687-a7b3-42dc-a09f-ec81a6792064.png)
