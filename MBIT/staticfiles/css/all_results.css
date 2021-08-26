@@ -1,0 +1,212 @@
+@font-face {
+    font-family: "GmarketSansBold";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #FAF1BE;
+}
+
+#main_contents {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#main_contents .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mbit {
+    position: relative;
+    background: url('../img/mbit_bg.png') no-repeat 0 0;
+    background-size: 600px;
+    width: 600px;
+    height: 600px;
+}
+
+h1 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    font-family: "GmarketSansBold";
+    font-size: 50px;
+    color: rgba(127, 71, 221, 0.21);
+}
+
+.mbit div {
+    position: absolute;
+    transition: transform 0.5s;
+}
+
+.mbit div:hover {
+    transform: scale(1.1);
+}
+
+.frontend {
+    top: -30px;
+    left: 39%;
+    width: 135px;
+}
+
+.backend {
+    top: 30%;
+    left: 40px;
+    width: 150px;
+}
+
+.security {
+    bottom: 30px;
+    left: 70px;
+    width: 210px;
+}
+
+.game {
+    bottom: 30px;
+    right: 100px;
+    width: 180px;
+}
+
+.data {
+    top: 30%;
+    right: 30px;
+    width: 150px;
+}
+
+
+.mbit img {
+    width: 100%;
+    height: auto;
+}
+
+@media all and (min-width: 279px) and (max-width: 359px) {
+    .mbit {
+        background-size: 260px;
+        width: 260px;
+        height: 260px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+    
+    .frontend {
+        top: -15px;
+        left: 38%;
+        width: 60px;
+    }
+    
+    .backend {
+        left: 15px;
+        width: 65px;
+    }
+    
+    .security {
+        bottom: 10px;
+        left: 30px;
+        width: 90px;
+    }
+    
+    .game {
+        bottom: 10px;
+        right: 40px;
+        width: 75px;
+    }
+    
+    .data {
+        right: 10px;
+        width: 65px;
+    }
+}
+
+@media all and (min-width: 360px) and (max-width: 600px) {
+    .mbit {
+        background-size: 350px;
+        width: 350px;
+        height: 350px;
+    }
+    
+    h1 {
+        font-size: 30px;
+    }
+    
+    .frontend {
+        top: -15px;
+        width: 80px;
+    }
+    
+    .backend {
+        left: 20px;
+        width: 90px;
+    }
+    
+    .security {
+        bottom: 15px;
+        left: 40px;
+        width: 120px;
+    }
+    
+    .game {
+        bottom: 15px;
+        right: 60px;
+        width: 100px;
+    }
+    
+    .data {
+        right: 15px;
+        width: 90px;
+    }
+}
+
+@media all and (min-width: 1920px) and (max-width: 2560px) {
+    .mbit {
+        background-size: 800px;
+        width: 800px;
+        height: 800px;
+    }
+    
+    h1 {
+        font-size: 60px;
+    }
+    
+    .mbit div:hover {
+        transform: scale(1.1);
+    }
+    
+    .frontend {
+        top: -10px;
+        left: 40%;
+        width: 170px;
+    }
+    
+    .backend {
+        top: 30%;
+        left: 40px;
+        width: 200px;
+    }
+    
+    .security {
+        bottom: 40px;
+        left: 100px;
+        width: 270px;
+    }
+    
+    .game {
+        bottom: 40px;
+        right: 130px;
+        width: 230px;
+    }
+    
+    .data {
+        top: 30%;
+        right: 40px;
+        width: 200px;
+    }
+}

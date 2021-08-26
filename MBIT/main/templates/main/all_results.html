@@ -1,0 +1,35 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/all_results.css' %}">
+    <title>나의 개발 유형찾기</title>
+{% endblock head %}
+
+
+{% block body %}
+    <section id="main_contents">
+        <div class="wrapper">
+            <h1>MBIT</h1>
+            <div class="mbit">
+                <div class="frontend">
+                    <a href="/result/2"><img src="{% static 'img/frontend-no-bg.png' %}" alt="프론트엔드"></a>
+                </div>
+                <div class="backend">
+                    <a href="/result/1"><img src="{% static 'img/backend-no-bg.png' %}" alt="백엔드"></a>  
+                </div>
+                <div class="security">
+                    <a href="/result/4"><img src="{% static 'img/information_security-no-bg.png' %}" alt="정보보안"></a>
+                </div>
+                <div class="game">
+                    <a href="/result/5"><img src="{% static 'img/game_developer-no-bg.png' %}" alt="게임개발"></a>
+                </div>
+                <div class="data">
+                    <a href="/result/3"><img src="{% static 'img/data_analyst-no-bg.png' %}" alt="데이터분석"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock body %}

@@ -1,0 +1,817 @@
+[
+{
+    "model": "main.question",
+    "pk": 1,
+    "fields": {
+        "number": 1,
+        "content": "당신이 가장 재밌었던 수업은?"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 2,
+    "fields": {
+        "number": 2,
+        "content": "여러분의 서비스가 성공하였다면, 서비스를 성공시킨 요소는?"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 3,
+    "fields": {
+        "number": 3,
+        "content": "오류가 생겼습니다. 모두의 중요도가 동일하다고 할 때 당신이 먼저 처리할 오류는?"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 4,
+    "fields": {
+        "number": 4,
+        "content": "당신이 만약 웹 서비스를 만들었을 때, 가장 듣기 좋을 것 같은 칭찬은?"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 5,
+    "fields": {
+        "number": 5,
+        "content": "당신은 영양제를 구입하려고 합니다. 당신이 가장 먼저 고려할 것은?"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 6,
+    "fields": {
+        "number": 6,
+        "content": "당신은 망해가는 빵집을 인수했습니다. 당신이 가장 먼저 시작할 일은?"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 7,
+    "fields": {
+        "number": 7,
+        "content": "당신은 친구에게 크리스마스 스웨터를 선물해 주기로 했습니다. 당신의 선택은?"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 8,
+    "fields": {
+        "number": 8,
+        "content": "당신은 음료 회사의 잘나가는 직원으로, 사장님이 당신에게 신메뉴 개발을 일임하겠다고 합니다. 당신의 음료 개발 방법은?"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 9,
+    "fields": {
+        "number": 9,
+        "content": "당신은 바다에 놀러왔습니다. 성공적인 여행을 위해 가장 먼저 해야할 것은?"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 10,
+    "fields": {
+        "number": 10,
+        "content": "당신은 친구의 집들이에 가려고 합니다. 당신이 선택한 선물은?"
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 1,
+    "fields": {
+        "content": "게임 개발(유니티, 언리얼, Pygame)",
+        "developer": 5,
+        "question": 1
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 2,
+    "fields": {
+        "content": "백엔드 또는 인프라(C계열-닷넷, JAVA-Spring, Python-Django, Network, Ubuntu, CentOS, 부하분산, etc)",
+        "developer": 1,
+        "question": 1
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 3,
+    "fields": {
+        "content": "정보보안(해킹과 방어)",
+        "developer": 4,
+        "question": 1
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 4,
+    "fields": {
+        "content": "프론트엔드(HTML, CSS, Javascript, etc)",
+        "developer": 2,
+        "question": 1
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 5,
+    "fields": {
+        "content": "데이터 분석과 인공지능(전처리, 분석, 시각화, 머신러닝, 딥러닝)",
+        "developer": 3,
+        "question": 1
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 6,
+    "fields": {
+        "content": "이 길은 내 길이 아닌 것 같다... 고로 재미있는지 모르겠다.",
+        "developer": null,
+        "question": 1
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 7,
+    "fields": {
+        "content": "데이터 분석을 통한 효과적인 개인 맞춤형 서비스",
+        "developer": 3,
+        "question": 2
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 8,
+    "fields": {
+        "content": "화려하거나 품격있는 디자인, 흥미로운 콘텐츠 제작",
+        "developer": 2,
+        "question": 2
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 9,
+    "fields": {
+        "content": "게임적인(Gamification, 게이미피케이션) 요소 도입",
+        "developer": 5,
+        "question": 2
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 10,
+    "fields": {
+        "content": "안정적인 서비스 운용",
+        "developer": 1,
+        "question": 2
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 11,
+    "fields": {
+        "content": "믿을 수 있는 정보 관리",
+        "developer": 4,
+        "question": 2
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 12,
+    "fields": {
+        "content": "서브 페이지 화면 로딩 시간이 딜레이되는 현상",
+        "developer": 1,
+        "question": 3
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 13,
+    "fields": {
+        "content": "데이터 분석을 통한 맞춤형 광고 서비스 오류",
+        "developer": 3,
+        "question": 3
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 14,
+    "fields": {
+        "content": "홈페이지 화면의 뒤틀린 이미지, 폰트 깨짐 현상",
+        "developer": 2,
+        "question": 3
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 15,
+    "fields": {
+        "content": "(개인정보 보호법에는 저촉되지 않지만) 민감 정보가 노출되는 현상",
+        "developer": 4,
+        "question": 3
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 16,
+    "fields": {
+        "content": "오류가 발생했을 때 할 수 있는 게임",
+        "developer": 5,
+        "question": 3
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 17,
+    "fields": {
+        "content": "개발자 친구 : \"네가 만든 사이트 진짜 예쁘다!\"",
+        "developer": 2,
+        "question": 4
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 18,
+    "fields": {
+        "content": "개발자 친구 : \"동시 접속이 1천명인데 이렇게 빠르다고?\" 또는 \"SNS 로그인이 다 들어가 있네, 난 요즘 이런게 편하더라.\"",
+        "developer": 1,
+        "question": 4
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 19,
+    "fields": {
+        "content": "해커 친구 : \"보안 취약점이 없는 완벽한 시큐어코딩이야. 너의 사이트는 완벽해.\"",
+        "developer": 4,
+        "question": 4
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 20,
+    "fields": {
+        "content": "개발자 친구 : \"서비스를 해보니 내가 원하는 광고가 딱! 나오니까 너무 좋더라!\"",
+        "developer": 3,
+        "question": 4
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 21,
+    "fields": {
+        "content": "게이머 친구 : \"사이트에 있는 그 게임 때문에, 2박 3일동안 잠도 자지 못했어.\"",
+        "developer": 5,
+        "question": 4
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 22,
+    "fields": {
+        "content": "일단 효과가 좋은걸 사자! 고농축 영양제 구매",
+        "developer": 1,
+        "question": 5
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 23,
+    "fields": {
+        "content": "화려한 상품 상세 페이지가 내 눈을 사로잡는다. 이걸로 사야지!",
+        "developer": 2,
+        "question": 5
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 24,
+    "fields": {
+        "content": "동일한 영양제 함량을 제조사별로 비교해 봐야지",
+        "developer": 3,
+        "question": 5
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 25,
+    "fields": {
+        "content": "믿을 수 있는 영양제가 맞나? 꼼꼼하게 따져봐야겠어",
+        "developer": 4,
+        "question": 5
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 26,
+    "fields": {
+        "content": "맛없으면 결국 안 먹어! 젤리로 된 제품은 없나?",
+        "developer": 5,
+        "question": 5
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 27,
+    "fields": {
+        "content": "\"어떤 빵이 제일 잘 나갈까?\" 수요를 조사해서 새로운 메뉴 만들기",
+        "developer": 3,
+        "question": 6
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 28,
+    "fields": {
+        "content": "\"빵집은 빵이 맛있어야지!\" 효율이 좋은 새 오븐 사기",
+        "developer": 1,
+        "question": 6
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 29,
+    "fields": {
+        "content": "\"일단 이벤트를 통해 손님을 모아야 해!\" 파격 세일 이벤트 등 새로운 이벤트 만들기",
+        "developer": 5,
+        "question": 6
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 30,
+    "fields": {
+        "content": "\"요즘은 레트로 갬성이지~\" 유행이 다시 돌아온 90년대 간판 설치하기",
+        "developer": 2,
+        "question": 6
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 31,
+    "fields": {
+        "content": "\"음식을 파는 곳은 당연히 깨끗해야지!\" 위생과 안전을 위해 세X코, 캡X 등록하기",
+        "developer": 4,
+        "question": 6
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 32,
+    "fields": {
+        "content": "난 내 눈을 믿는다 너한테 가장 잘 어울리는 옷은 내가 알아!",
+        "developer": 2,
+        "question": 7
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 33,
+    "fields": {
+        "content": "겨울옷은 따뜻해야지~ 기능 중시! 이번 겨울 최고 한파래",
+        "developer": 1,
+        "question": 7
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 34,
+    "fields": {
+        "content": "두뇌 풀가동! 지금까지 친구가 입었던 니트류 옷을 알아낸다. 네가 마음에 들어하는 옷은 이미 내 뇌 속에 있다!",
+        "developer": 3,
+        "question": 7
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 35,
+    "fields": {
+        "content": "알러지가 생길 수 있으니 꼼꼼하게 성분 표시를 읽고 알러지 프리 제품을 사줘야지!",
+        "developer": 4,
+        "question": 7
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 36,
+    "fields": {
+        "content": "잊지 못할 재미있는 선물을 줘야지! 반짝이는 전구 달린 어글리 스웨터",
+        "developer": 5,
+        "question": 7
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 37,
+    "fields": {
+        "content": "손님들의 눈길을 확 끌어보자! 요즘 유행하는 화려한 디자인으로 포장한 음료!",
+        "developer": 2,
+        "question": 8
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 38,
+    "fields": {
+        "content": "고객신뢰가 최우선! 프랜차이즈 매장마다 레시피가 다르면 안 되니까 정확한 용량과 제조법은 필수!",
+        "developer": 1,
+        "question": 8
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 39,
+    "fields": {
+        "content": "인기 많은 음료 싹 가지고 와! 왜 인기가 있었는지, 인기 요인을 찾아보자!",
+        "developer": 3,
+        "question": 8
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 40,
+    "fields": {
+        "content": "요즘은 홍보로 반은 먹고 들어가지! SNS 첼린지 이벤트로 사람들의 관심을 끌자!",
+        "developer": 5,
+        "question": 8
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 41,
+    "fields": {
+        "content": "레시피를 만드는 것도 중요하지만, 우리만의 독자적인 레시피가 새어나가지 않게 조심해야 해!",
+        "developer": 4,
+        "question": 8
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 42,
+    "fields": {
+        "content": "일단 파라솔이랑 음식 세팅! 사진 잘 찍어서 SNS에 여행 온 거 자랑해야지!",
+        "developer": 2,
+        "question": 9
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 43,
+    "fields": {
+        "content": "여행 왔는데 짐을 잃어버리면 낭패지! 락커룸이 어디 있는지 찾아보자!",
+        "developer": 4,
+        "question": 9
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 44,
+    "fields": {
+        "content": "준비물은 다 챙겨왔지? 빠뜨린 거 없는지 다시 확인하자!",
+        "developer": 1,
+        "question": 9
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 45,
+    "fields": {
+        "content": "이왕 온 거 유명한 건 다 해 봐야지! 근처에 어떤 맛집이 있는지 알아보자!",
+        "developer": 3,
+        "question": 9
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 46,
+    "fields": {
+        "content": "그냥 노는 건 재미없잖아? 비치볼 게임 하면서 놀자!",
+        "developer": 5,
+        "question": 9
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 47,
+    "fields": {
+        "content": "집 꾸미기에 도움이 되는 예쁜 인테리어 소품을 골라볼까?",
+        "developer": 2,
+        "question": 10
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 48,
+    "fields": {
+        "content": "실용성이 갑이지! 화장지랑 수건 세트랑...",
+        "developer": 1,
+        "question": 10
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 49,
+    "fields": {
+        "content": "음... 우선 센스있는 집들이 선물 먼저 검색해봐야지!",
+        "developer": 3,
+        "question": 10
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 50,
+    "fields": {
+        "content": "집들이 가서 뭐하겠어! 보드 게임이나 사 가자!",
+        "developer": 5,
+        "question": 10
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 51,
+    "fields": {
+        "content": "역시 집은 안전이 최고!! 현관문 보안장치 사줘야겠다.",
+        "developer": 4,
+        "question": 10
+    }
+},
+{
+    "model": "main.developer",
+    "pk": 1,
+    "fields": {
+        "name": "백엔드 개발자",
+        "count": 16,
+        "data": {
+            "title": "보이지 않는 것을 보는 당신은!",
+            "features": [
+                "어떤 일이든 안정적인 것이 우선임. 밴드 활동을 한다면, 화려한 보컬보다는 안정적인 연주를 이끌어나가는 베이스와 드럼을 맡는 편.",
+                "주로 데이터를 다루는 데에 관심이 있음. 시각적으로 디자인을 하는 것에는 관심이 없고 귀찮음.",
+                "논리적인 사고를 하는 것을 즐기는 스타일으로 추리소설, 방탈출 게임 등을 좋아하고 어려운 문제를 해결하는데 성취감을 느낌.",
+                "효율적인 거 너무 좋아 최고야...! 목적지에 갈 때도 최단 경로 알아내서 그 길로 가는 편. 지하철 탈 때 아무 데서나 서 있지 않음. 빠른 환승 구역 앞에 서 있어야 마음이 안정됨."
+            ],
+            "descriptions": [
+                "프론트 개발자가 사용자에게 보여지는 화면을 담당하는 개발자라면, 백엔드 개발자는 로그인, 추천 기능 등 서비스의 뒷부분 즉, 서버 설계를 담당하는 개발자입니다.",
+                "클라이언트(사용자)와 데이터베이스(데이터가 모여있는 곳) 사이를 중계하는 서버를 개발합니다. 클라이언트가 요청하는 데이터를 가공하여 제공(예를 들어 넷플릭스에서 내가 원하는 영상 리스트업)하는 프로그램을 개발합니다."
+            ],
+            "languages": {
+                "list": [
+                    {
+                        "name": "python",
+                        "img": "img/lang/python.png"
+                    },
+                    {
+                        "name": "Java",
+                        "img": "img/lang/java.png"
+                    },
+                    {
+                        "name": "JavaScript",
+                        "img": "img/lang/js.png"
+                    }
+                ],
+                "comments": [
+                    "python을 배우신 후에는, Django 또는 Flask 웹 프레임워크를 배우시면 됩니다.",
+                    "Java를 배우신 후에는, Spring과 Spring Boot 웹 프레임워크를 공부하시면 좋습니다.",
+                    "JavaScript를 배우신 경우 Node.js라는 런타임 환경과 그 위에서 동작하는 Express.js 등의 웹 프레임워크를 공부하시면 됩니다."
+                ]
+            },
+            "lectures": [
+                {
+                    "name": "Python 부트캠프",
+                    "img": "img/lec/lec_python_bootcamp.png",
+                    "url": "https://www.inflearn.com/course/파이썬-부트캠프"
+                },
+                {
+                    "name": "코알못에서 웹서비스 런칭까지 : 제주 코딩 베이스캠프(Django)",
+                    "img": "img/lec/lec_web_fullstack.png",
+                    "url": "https://www.inflearn.com/course/web_fullstack"
+                },
+                {
+                    "name": "Django Mini project BEST 3",
+                    "img": "img/lec/lec_django_mini.png",
+                    "url": "https://www.inflearn.com/course/Django-미니프로젝트강좌"
+                }
+            ]
+        }
+    }
+},
+{
+    "model": "main.developer",
+    "pk": 2,
+    "fields": {
+        "name": "프론트엔드 개발자",
+        "count": 12,
+        "data": {
+            "title": "예술적 감각이 뛰어난 당신은!",
+            "features": [
+                "내 눈으로 결과를 확인해야 함.  바로 바로 적용되는 화면에 성취감을 느낌.",
+                "어렸을 때 한번쯤은 호그와트 들어가는 상상해보지 않나? 상상력이 풍부하고 새로운 도전을 즐기는 편임.",
+                "은근히 완벽주의자 성향이 있어서 1px이라도 비뚤어지거나 대칭이 맞지 않으면 참을 수 없음.",
+                "자유로운 영혼이지만 내가 지금 무엇을 해야하는지 정확히 알아야 함."
+            ],
+            "descriptions": [
+                "FE(Front-End)라고도 부르며, 웹이나 앱을 이용할 때 눈으로 보는 모든 화면들을 만드는 개발자를 의미합니다.",
+                "반응형 웹이나 UI를 만들어야 하기 때문에 미적 감각이 필요합니다.",
+                "웹 퍼블리셔와 프론트엔드 개발자는 공동의 영역을 공유합니다. 웹 퍼블리셔는 주로 HTML, CSS를 사용하여 화면을 설계합니다. 프론트엔드 개발자는 js, jQuery, 백엔드와의 연동 등 화면 설계와 동시에 화면 구조까지 살펴볼 수 있는 사람을 말합니다. 그러나 실무에서는 이 두 가지 직업군의 롤 모두를 수행하는 사람이 많습니다."
+            ],
+            "languages": {
+                "list": [
+                    {
+                        "name": "HTML",
+                        "img": "img/lang/html.png"
+                    },
+                    {
+                        "name": "CSS",
+                        "img": "img/lang/css.png"
+                    },
+                    {
+                        "name": "JavaScript",
+                        "img": "img/lang/js.png"
+                    }
+                ],
+                "comments": [
+                    "HTML, CSS, JavaScript 웹을 구성하는 3요소 입니다! (얼마 전 Web Assembly가 추가되어 4요소가 되었지만 처음에는 3개만 배우셔도 충분합니다!)",
+                    "기본적인 내용이 숙지되었다면 CSS Animation, Media Query, Canvas, JSON parsing, Ajax, Node.js, jQuery를 공부해보세요!"
+                ]
+            },
+            "lectures": [
+                {
+                    "name": "HTML, CSS, JS, Python 30분 요약강좌",
+                    "img": "img/lec/lec_30minutes.png",
+                    "url": "https://www.inflearn.com/course/제주코딩-웹개발-30분요약"
+                },
+                {
+                    "name": "코알못에서 웹서비스 런칭까지 : 제주 코딩 베이스캠프(Django)",
+                    "img": "img/lec/lec_web_fullstack.png",
+                    "url": "https://www.inflearn.com/course/web_fullstack"
+                },
+                {
+                    "name": "제주코딩베이스캠프 Code Festival: JavaScript 100제",
+                    "img": "img/lec/lec_js100.png",
+                    "url": "https://www.inflearn.com/course/제주코딩-자바스크립트-100제"
+                }
+            ]
+        }
+    }
+},
+{
+    "model": "main.developer",
+    "pk": 3,
+    "fields": {
+        "name": "데이터 분석과 인공지능",
+        "count": 21,
+        "data": {
+            "title": "Data에서 인사이트를 발견할 수 있는 당신은!",
+            "features": [
+                "하루하루 계획을 세워야 함. 준비없이 갑작스럽게 해야 될 일이 생기는 것은 질색!",
+                "효율적이고 합리적인 방식을 선호하는 타입. 자기전에 내일 어디갈지 뭐할지 다 정하고 자는 편.",
+                "의사결정 시 나의 느낌보다는 다른 사람들의 의견들을 꼼꼼히 조사하는 편. 그래서 뭔가 결정하는 데 하루 종일 걸림."
+            ],
+            "descriptions": [
+                "데이터 분석은 정보에 대한 결론을 도출하기 위해 적합한 알고리즘과 통계기법을 적용해 패턴을 찾는 작업입니다.",
+                "인공지능은 데이터 분석 기반으로 인간만이 할 수 있다고 생각했던 기능을 컴퓨터가 수행하는 것을 목표로 합니다.",
+                "정보를 기반으로 의사결정을 지원하는 것을 목표로 하기 때문에 이해관계자가 잘 이해할 수 있도록 전달하는 것 또한 중요합니다.",
+                "무엇을 해결하고자 하는지 명확하게 판단해야 하기 때문에 원하는 목적과 어떤 임팩트가 있는지 구체적으로 정의하는 것이 좋습니다."
+            ],
+            "languages": {
+                "list": [
+                    {
+                        "name": "Python",
+                        "img": "img/lang/python.png"
+                    },
+                    {
+                        "name": "R",
+                        "img": "img/lang/r.png"
+                    },
+                    {
+                        "name": "SAS",
+                        "img": "img/lang/sas.png"
+                    }
+                ],
+                "comments": [
+                    "SAS, MATLAB, 사이킷런(Scikit-learn), 텐서플로우(TensorFlow), 파이토치(PyTorch) "
+                ]
+            },
+            "lectures": [
+                {
+                    "name": "30분 요약 강좌 시즌2 : Python 활용편",
+                    "img": "img/lec/lec_30minutes2.png",
+                    "url": "https://www.inflearn.com/course/제주코딩-웹개발-30분요약-시즌2"
+                },
+                {
+                    "name": "제주 하간디 이신 데이터들 Python으로 몬딱 분석해불게",
+                    "img": "img/lec/lec_jeju_data.jpg",
+                    "url": "https://www.inflearn.com/course/제주코딩베이스캠프-파이썬-데이터분석"
+                },
+                {
+                    "name": "캐글 데이터로 살펴보는 데이터분석 With Python and SAS",
+                    "img": "img/lec/lec_sas.png",
+                    "url": "https://www.inflearn.com/users/170213"
+                }
+            ]
+        }
+    }
+},
+{
+    "model": "main.developer",
+    "pk": 4,
+    "fields": {
+        "name": "정보보안",
+        "count": 6,
+        "data": {
+            "title": "모든지 뚫고, 막을 수 있는 당신은!",
+            "features": [
+                "어떤 서비스가 만들어지기 전에 시큐어코딩이 이뤄지지 않으면 사상누각! 아무리 좋은 서비스라 하더라도 단번에 무너질 수 있어!",
+                "그냥 웹페이지를 접속했을 뿐인데 나에겐 취약점이 너무나 많이 보인다! 이렇게 해도 뚫릴 것 같고, 저렇게 해도 뚫릴 것 같아.",
+                "해커, 정의의 이름으로 너희들을 용납하지 않겠다!",
+                "이미 완성품인데 괜히 분해해서 분석해 보고 싶음. 사실 그렇게 분해하다가 망가진 것도 있음...ㅎ"
+            ],
+            "descriptions": [
+                "정보보안은 보안 취약점을 찾아내어 문제를 해결하고 이를 악의적으로 이용하는 것을 방지하는 행위를 말합니다.",
+                "기업 측면에서는 네트워크, 데이터베이스 등의 정보자산을 안전하게 보호하고, 일반 사용자 측면에서는 개인 정보 유출, 남용을 방지하는 역할을 담당한다."
+            ],
+            "languages": {
+                "list": [
+                    {
+                        "name": "C",
+                        "img": "img/lang/c.png"
+                    },
+                    {
+                        "name": "Python",
+                        "img": "img/lang/python.png"
+                    },
+                    {
+                        "name": "SQL",
+                        "img": "img/lang/sql.png"
+                    }
+                ],
+                "comments": [
+                    "Linux, Windows 등의 운영체제"
+                ]
+            },
+            "lectures": [
+                {
+                    "name": "정보보안 패스파인더",
+                    "img": "img/lec/lec_pathfinder.png",
+                    "url": "https://www.inflearn.com/course/정보보안-패스파인더"
+                },
+                {
+                    "name": "실습으로 배우는 SQL injection",
+                    "img": "img/lec/lec_sql.png",
+                    "url": "https://www.inflearn.com/users/170213"
+                }
+            ]
+        }
+    }
+},
+{
+    "model": "main.developer",
+    "pk": 5,
+    "fields": {
+        "name": "게임 개발",
+        "count": 1,
+        "data": {
+            "title": "Game을 좋아하고, 상상하길 즐겨하는 당신은!",
+            "features": [
+                "뭐든 새로 나오면 한 번 경험해 봐야 직성이 풀림. 남들이 이거 해 봤냐고 물어보면 당연하지! 라고 답하는 편.",
+                "남들과 똑같기를 거부한다! 창의적인 스타일, 항상 새로운 재미있는 것을 추구한다.",
+                "밤새는 거 잘함. 해외에 나가도 시차적응이 필요없는 타입. 일이 오백만개 쌓여있어도 어찌저찌 마감기한 내에는 다 끝내는 편.",
+                "게임을 좋아하지 않는데 게임 개발 유형이 나왔다고 놀라지 마세요! 요리를 먹는 것과 요리를 하는 것은 다르답니다."
+            ],
+            "descriptions": [
+                "게임 개발자는 컴퓨터 게임이나 비디오 게임을 개발하는 개발자를 말합니다.",
+                "게임 프로그래머는 프로그래밍 언어 외에도 그래픽, 물리에 대한 이해를 바탕으로 가상세계를 구현하기 때문에 수학적, 물리적 지식이 필요합니다.",
+                "게임 개발은 가장 예측하기 힘든 분야입니다. 내가 재밌어도 남들은 재미없어 할 수도 있어요. 재미라는 요소 자체가 주관적이기 때문이에요. 그렇기 때문에 트렌드를 잘 읽어야 하고, 변화에 빠르게 대응하기 위해 구조를 탄탄하게 잡으려는 노력을 해야합니다."
+            ],
+            "languages": {
+                "list": [
+                    {
+                        "name": "C#",
+                        "img": "img/lang/cs.png"
+                    },
+                    {
+                        "name": "C++",
+                        "img": "img/lang/cpp.png"
+                    },
+                    {
+                        "name": "Python",
+                        "img": "img/lang/python.png"
+                    }
+                ],
+                "comments": [
+                    "유니티(Unity), 언리얼(Unreal) 등의 상용 게임 엔진과 DirectX, OpenGL 등의 그래픽 라이브러리도 함께 공부해보세요!"
+                ]
+            },
+            "lectures": [
+                {
+                    "name": "PyGame 어드벤쳐 : 위니브 월드를 수복하라!",
+                    "img": "img/lec/lec_pygame.png",
+                    "url": "https://www.inflearn.com/course/파이게임-어드벤쳐"
+                }
+            ]
+        }
+    }
+}
+]

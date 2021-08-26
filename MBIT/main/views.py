@@ -54,3 +54,6 @@ def result(request, developer_id):
         'developer' : developer,
     }
     return render(request, 'main/result.html', context=context)
+
+def all_results(request):
+    return render(request, 'main/all_results.html')
